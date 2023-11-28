@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Curiculum.Views"
+             x:Class="Curiculum.Views.ResultadosPage">
+    <ScrollView>
+        <StackLayout Margin="20" BackgroundColor="#FDF5E6">
+
+            <Label Text="CURRICULUM" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#3498DB" Margin="0,0,0,20"/>
+
+            <Label Text="Nombre y Apellido:" FontSize="18" TextColor="#2C3E50" />
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="NombreLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+            <Label Text="Fecha de Nacimiento:" FontSize="18" TextColor="#2C3E50" />
+
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="FechaNacimientoLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+            <Label Text="Ocupación:" FontSize="18" TextColor="#2C3E50" />
+
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="OcupacionLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+            <Label Text="Contacto:" FontSize="18" TextColor="#2C3E50" />
+
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="ContactoLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+            <Label Text="Nacionalidad:" FontSize="18" TextColor="#2C3E50" />
+
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="NacionalidadLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+            <Label Text="Nivel de Inglés:" FontSize="18" TextColor="#2C3E50" />
+
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="NivelInglesLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+
+            <Label Text="Lenguaje de Programación:" FontSize="18" TextColor="#2C3E50" />
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="LenguajesProgramacionLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+            <Label Text="Aptitudes:" FontSize="18" TextColor="#2C3E50" />
+
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="AptitudesLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+            <Label Text="Habilidades:" FontSize="18" TextColor="#2C3E50" />
+
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="HabilidadesLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+            <Label Text="Perfil:" FontSize="18" TextColor="#2C3E50" />
+            <Frame BackgroundColor="#ECF0F1" Padding="10" CornerRadius="10" Margin="0,0,0,10">
+                <Label x:Name="PerfilLabel" FontSize="16" TextColor="#333333" Margin="0,5,0,0"/>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

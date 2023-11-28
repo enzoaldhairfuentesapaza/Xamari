@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Curiculum"
+             x:Class="Curiculum.Views.CuriculumPage">
+
+    <ScrollView BackgroundColor="LightYellow">
+        <StackLayout Margin="20">
+
+            <Label Text="Nombre y Apellidos" FontSize="18" TextColor="#2C3E50" Margin="0,0,0,5"/>
+            <Entry x:Name="NombreEntry" Placeholder="Ingresa tu nombre y apellidos" FontSize="16" Margin="0,0,0,10" />
+
+            <Label Text="Fecha de Nacimiento" FontSize="18" TextColor="#2C3E50" Margin="0,0,0,5"/>
+            <DatePicker x:Name="FechaDate" FontSize="16" Margin="0,0,0,10"/>
+
+            <Label Text="Ocupación" FontSize="18" TextColor="#2C3E50" Margin="0,0,0,5"/>
+            <Entry x:Name="Ocupacion" Placeholder="Ingresa tu ocupación" FontSize="16" Margin="0,0,0,10" />
+
+            <Label Text="Contacto (teléfono, email)" FontSize="18" TextColor="#2C3E50" Margin="0,0,0,5"/>
+            <Entry x:Name="Contacto" Placeholder="Ingresa tu contacto" FontSize="16" Margin="0,0,0,10" />
+
+            <Label Text="Nacionalidad" FontSize="18" TextColor="#2C3E50" Margin="0,0,0,5"/>
+            <Picker x:Name="Nacionalidad" FontSize="16" Margin="0,0,0,10">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Peruana</x:String>
+                        <x:String>Mexicana</x:String>
+                        <x:String>Estadounidense</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Nivel de inglés" FontSize="18" TextColor="#2C3E50" Margin="0,20,0,5"/>
+            <StackLayout x:Name="Nivel">
+                <RadioButton Content="Básico" FontSize="16"/>
+                <RadioButton Content="Intermedio" FontSize="16"/>
+                <RadioButton Content="Avanzado" FontSize="16"/>
+                <RadioButton Content="Fluido" FontSize="16"/>
+            </StackLayout>
+
+            <Label Text="Lenguajes de programación" FontSize="18" TextColor="#2C3E50" Margin="0,20,0,5"/>
+            <Picker x:Name="Lenguaje" FontSize="16" Margin="0,0,0,10">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>C#</x:String>
+                        <x:String>Java</x:String>
+                        <x:String>Python</x:String>
+                        <x:String>HTML</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Aptitudes" FontSize="18" TextColor="#2C3E50" Margin="0,20,0,5"/>
+            <Entry x:Name="Aptitudes" Placeholder="Ingresa tus aptitudes" FontSize="16" Margin="0,0,0,10" />
+
+            <Label Text="Habilidades" FontSize="18" TextColor="#2C3E50" Margin="0,20,0,5"/>
+            <Picker x:Name="Habilidades" FontSize="16" Margin="0,0,0,10">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Comunicación</x:String>
+                        <x:String>Liderazgo</x:String>
+                        <x:String>Empatía</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Perfil" FontSize="18" TextColor="#2C3E50" Margin="0,20,0,5"/>
+            <Editor x:Name="Perfil" Placeholder="Describe tu perfil" FontSize="16" Margin="0,0,0,20" />
+
+            <Button Text="Enviar" Clicked="OnEnviarClicked" BackgroundColor="#3498DB" TextColor="White" FontSize="18" Margin="0,0,0,20"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
